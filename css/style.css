@@ -59,5 +59,43 @@
     background-size:cover;
     background-position:center;
     min-height: 100px;
-    /* width: 50%; */
+}
+
+.videoCol{
+    background: url('/funboxui/img/videos.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    min-height: 100px;
+}
+
+.wallpaperCol{
+    background: url('/funboxui/img/wallpaper.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    min-height: 100px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color:#1b0000bd; */
+    padding: 10px;
+    border-radius: 10px;
+    color: #FFF !important;
+  }
+
+.gameTxt{
+    background-color: #1b0000bd;
+}
+
+.videoTxt{
+    background-color: #151f01b8;
+}
+
+.wallpaperTxt{
+    background-color: #1a273cad;
 }

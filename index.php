@@ -123,7 +123,7 @@
       <div class="row banner">
       <a class="col-xs-12 col-sm-12 column">
           <div class="gameCol">
-            <h1 class="text-center text-uppercase text-secondary mb-0 pb-20 pt-20">Games</h1>
+            <div class="centered gameTxt"><h4 class="text-center text-uppercase mb-0">Games</h4></div>
           </div>
       </a>
       </div>
@@ -132,18 +132,22 @@
   <!-- Video -->
   <div class="container contentBlock" id="video">
       <div class="row banner">
-        <a class="col-xs-12 col-sm-12 column">
-            <img class="img-responsive" src="/funboxui/img/banner.gif">
-        </a>
+      <a class="col-xs-12 col-sm-12 column">
+          <div class="videoCol">
+            <div class="centered videoTxt"><h4 class="text-center text-uppercase mb-0">Videos</h4></div>
+          </div>
+      </a>
       </div>
   </div>
 
   <!-- Wallpaper -->
   <div class="container contentBlock" id="wallpaper">
       <div class="row banner">
-        <a class="col-xs-12 col-sm-12 column">
-            <img class="img-responsive" src="/funboxui/img/banner.gif">
-        </a>
+      <a class="col-xs-12 col-sm-12 column">
+          <div class="wallpaperCol">
+            <div class="centered wallpaperTxt"><h4 class="text-center text-uppercase mb-0">Wallpaper</h4></div>
+          </div>
+      </a>
       </div>
   </div>
 
@@ -183,7 +187,7 @@
 
   <div class="copyright py-4 text-center text-white">
     <div class="container">
-      <small>&copy; FunBox <?php echo date('Y'); ?></small>
+      <small>&copy; Adbox Bangladesh <?php echo date('Y'); ?></small>
     </div>
   </div>
 

@@ -1,0 +1,63 @@
+.navbar-brand img{
+    max-width: 150px;
+}
+
+#buttons{
+    margin-top: -80px;
+}
+
+/* Make the image fully responsive */
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+#myAccountBtn{
+    float: right;
+    width: 45%;
+    background-color: #cc6600;
+    border-color: #cc6600;
+}
+
+#subscribeBtn{
+    float: left;
+    width: 45%;
+    background-color: #cc6600;
+    border-color: #cc6600;
+}
+
+#subscribeBtn.focus, #subscribeBtn:focus, #myAccountBtn.focus, #myAccountBtn:focus, .bg-funbox:focus{
+    box-shadow: 0 0 0 0.2rem rgba(243,57,2,.5)
+}
+
+.bg-funbox{
+    background-color: #cc6600;
+}
+
+.contentBlock{
+    margin-top: 10px;
+}
+.banner img{
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+}
+
+#mp3{
+    margin-bottom: 20px;
+}
+
+.footer{
+    font-size: 14px;
+    line-height: 1.25;
+}
+
+
+.gameCol{
+    background: url('/funboxui/img/games.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    min-height: 100px;
+    /* width: 50%; */
+}

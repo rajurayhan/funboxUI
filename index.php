@@ -121,7 +121,7 @@
   <!-- Games -->
   <div class="container contentBlock" id="games">
       <div class="row banner">
-      <a class="col-xs-12 col-sm-12 column">
+      <a class="col-xs-12 col-sm-12 column" href="#">
           <div class="gameCol">
             <div class="centered gameTxt"><h4 class="text-center text-uppercase mb-0">Games</h4></div>
           </div>
@@ -132,9 +132,20 @@
   <!-- Video -->
   <div class="container contentBlock" id="video">
       <div class="row banner">
-      <a class="col-xs-12 col-sm-12 column">
+      <a class="col-xs-12 col-sm-12 column" href="#">
           <div class="videoCol">
             <div class="centered videoTxt"><h4 class="text-center text-uppercase mb-0">Videos</h4></div>
+          </div>
+      </a>
+      </div>
+  </div>
+
+    <!-- MP3 -->
+    <div class="container contentBlock" id="wallpaper">
+      <div class="row banner">
+      <a class="col-xs-12 col-sm-12 column" href="#">
+          <div class="gameCol">
+            <div class="centered wallpaperTxt"><h4 class="text-center text-uppercase mb-0">Music</h4></div>
           </div>
       </a>
       </div>
@@ -143,7 +154,7 @@
   <!-- Wallpaper -->
   <div class="container contentBlock" id="wallpaper">
       <div class="row banner">
-      <a class="col-xs-12 col-sm-12 column">
+      <a class="col-xs-12 col-sm-12 column" href="#">
           <div class="wallpaperCol">
             <div class="centered wallpaperTxt"><h4 class="text-center text-uppercase mb-0">Wallpaper</h4></div>
           </div>
@@ -152,22 +163,17 @@
   </div>
 
   <!-- Animation -->
-  <div class="container contentBlock" id="animation">
+  <div class="container contentBlock" id="wallpaper">
       <div class="row banner">
-        <a class="col-xs-12 col-sm-12 column">
-            <img class="img-responsive" src="/funboxui/img/banner.gif">
-        </a>
+      <a class="col-xs-12 col-sm-12 column" href="#">
+          <div class="videoCol">
+            <div class="centered wallpaperTxt"><h4 class="text-center text-uppercase mb-0">Animation</h4></div>
+          </div>
+      </a>
       </div>
   </div>
 
-  <!-- MP3 -->
-  <div class="container contentBlock" id="mp3">
-      <div class="row banner">
-        <a class="col-xs-12 col-sm-12 column">
-            <img class="img-responsive" src="/funboxui/img/banner.gif">
-        </a>
-      </div>
-  </div>
+
 
   <!-- Footer -->
   <footer class="footer text-justify">

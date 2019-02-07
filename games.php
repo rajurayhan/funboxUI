@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Funbox</title>
+  <title>Games - Funbox</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -73,37 +73,72 @@
 
   <!-- Slider  -->
 
-  <section id="slider">
+  <!-- Portfolio Grid Section -->
+  <section class="portfolio" id="portfolio">
     <div class="container">
-      <div id="demo" class="carousel slide" data-ride="carousel">
-
-        <!-- Indicators -->
-        <ul class="carousel-indicators">
-          <li data-target="#demo" data-slide-to="0" class="active"></li>
-          <li data-target="#demo" data-slide-to="1"></li>
-          <li data-target="#demo" data-slide-to="2"></li>
-        </ul>
-        
-        <!-- The slideshow -->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="http://www.funboxbd.com/club/assets/img/funbox-carousel-01.jpg" alt="Los Angeles" width="1100" height="500">
-          </div>
-          <div class="carousel-item">
-            <img src="http://www.funboxbd.com/club/assets/img/funbox-carousel-08.jpg" alt="Chicago" width="1100" height="500">
-          </div>
-          <div class="carousel-item">
-            <img src="http://www.funboxbd.com/club/assets/img/funbox-carousel-13.jpg" alt="New York" width="1100" height="500">
-          </div>
+      <h2 class="text-center text-uppercase text-secondary mb-0">Games</h2>
+      <hr class="star-dark mb-5">
+      <div class="row">
+        <div class="gameBlock">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/cabin.png" alt="">
+          </a>
         </div>
-        
-        <!-- Left and right controls -->
-        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#demo" data-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </a>
+        <div class="gameBlock">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/cake.png" alt="">
+          </a>
+        </div>
+        <div class="gameBlock">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/circus.png" alt="">
+          </a>
+        </div>
+        <div class="gameBlock">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/game.png" alt="">
+          </a>
+        </div>
+        <div class="gameBlock">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/safe.png" alt="">
+          </a>
+        </div>
+        <div class="gameBlock">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/submarine.png" alt="">
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -118,65 +153,6 @@
     </div>
   </div>
 
-  <!-- Games -->
-  <div class="container contentBlock" id="games">
-      <div class="row banner">
-      <a class="col-xs-12 col-sm-12 column" href="/funboxui/games.php">
-          <div class="gameCol">
-            <div class="centered gameTxt"><h4 class="text-center text-uppercase mb-0">Games</h4></div>
-          </div>
-      </a>
-      </div>
-  </div>
-
-  <!-- Video -->
-  <div class="container contentBlock" id="video">
-      <div class="row banner">
-      <a class="col-xs-12 col-sm-12 column" href="#">
-          <div class="videoCol">
-            <div class="centered videoTxt"><h4 class="text-center text-uppercase mb-0">Videos</h4></div>
-          </div>
-      </a>
-      </div>
-  </div>
-
-    <!-- MP3 -->
-    <div class="container contentBlock" id="music">
-      <div class="row banner">
-      <a class="col-xs-12 col-sm-12 column" href="#">
-          <div class="musicCol">
-            <div class="centered musicTxt"><h4 class="text-center text-uppercase mb-0">Music</h4></div>
-          </div>
-      </a>
-      </div>
-  </div>
-
-    <!-- Animation -->
-    <div class="container contentBlock" id="animation">
-      <div class="row banner">
-      <a class="col-xs-12 col-sm-12 column" href="#">
-          <div class="animationCol">
-            <div class="centered animationTxt"><h4 class="text-center text-uppercase mb-0">Animation</h4></div>
-          </div>
-      </a>
-      </div>
-  </div>
-
-  <!-- Wallpaper -->
-  <div class="container contentBlock" id="wallpaper">
-      <div class="row banner">
-      <a class="col-xs-12 col-sm-12 column" href="#">
-          <div class="wallpaperCol">
-            <div class="centered wallpaperTxt"><h4 class="text-center text-uppercase mb-0">Wallpaper</h4></div>
-          </div>
-      </a>
-      </div>
-  </div>
-
-
-
-
-
   <!-- Footer -->
   <footer class="footer text-justify">
     <div class="container">
@@ -186,19 +162,18 @@
           Download 5 free attractive contents everyday by subscribing to Funbox service only @ BDT 2.44 including (VAT+SD+SC) per day. To subscribe please click the subscribe button. Thank You!
           </p>
           <p class="text-center">
-            <i class="fa fa-phone-square" aria-hidden="true"></i>  01977733255
+            For Help Call <br> 01977733255, 01636007777, 01860744898
           </p>
-          <small>&copy; Adbox Bangladesh <?php echo date('Y'); ?></small>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- <div class="copyright py-4 text-center text-white">
+  <div class="copyright py-4 text-center text-white">
     <div class="container">
       <small>&copy; Adbox Bangladesh <?php echo date('Y'); ?></small>
     </div>
-  </div> -->
+  </div>
 
   <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
   <div class="scroll-to-top d-lg-none position-fixed ">

@@ -62,7 +62,7 @@
 }
 
 .musicCol{
-    background: url('/funboxui/img/music.png');
+    background: url('/funboxui/img/music-2.png');
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
@@ -79,6 +79,14 @@
 
 .wallpaperCol{
     background: url('/funboxui/img/wallpaper.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    min-height: 100px;
+}
+
+.animationCol{
+    background: url('/funboxui/img/animation.png');
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
@@ -109,5 +117,18 @@
 }
 
 .musicTxt{
-    background-color: #1a273cad;
+    background-color: #c245039e;
+}
+
+.animationTxt{
+    background-color: #0e3c0099;
+}
+
+.gameBlock{
+    padding-left: 2%;
+    width: 48% !important;
+}
+
+.fa-phone{
+    color: #FFF;
 }

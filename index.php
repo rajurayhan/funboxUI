@@ -141,11 +141,11 @@
   </div>
 
     <!-- MP3 -->
-    <div class="container contentBlock" id="wallpaper">
+    <div class="container contentBlock" id="music">
       <div class="row banner">
       <a class="col-xs-12 col-sm-12 column" href="#">
-          <div class="gameCol">
-            <div class="centered wallpaperTxt"><h4 class="text-center text-uppercase mb-0">Music</h4></div>
+          <div class="musicCol">
+            <div class="centered musicTxt"><h4 class="text-center text-uppercase mb-0">Music</h4></div>
           </div>
       </a>
       </div>

@@ -61,6 +61,14 @@
     min-height: 100px;
 }
 
+.musicCol{
+    background: url('/funboxui/img/music.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    min-height: 100px;
+}
+
 .videoCol{
     background: url('/funboxui/img/videos.png');
     background-repeat:no-repeat;
@@ -97,5 +105,9 @@
 }
 
 .wallpaperTxt{
+    background-color: #1a273cad;
+}
+
+.musicTxt{
     background-color: #1a273cad;
 }

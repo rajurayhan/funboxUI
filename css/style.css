@@ -14,14 +14,14 @@
 
 #myAccountBtn{
     float: right;
-    width: 45%;
+    width: 49.5%;
     background-color: #cc6600;
     border-color: #cc6600;
 }
 
 #subscribeBtn{
     float: left;
-    width: 45%;
+    width: 49.5%;
     background-color: #cc6600;
     border-color: #cc6600;
 }
@@ -31,7 +31,7 @@
 }
 
 .bg-funbox{
-    background-color: #cc6600;
+    background-color: #233048;
 }
 
 .contentBlock{
@@ -125,10 +125,14 @@
 }
 
 .gameBlock{
-    padding-left: 2%;
+    padding-left: 4%;
     width: 48% !important;
 }
 
 .fa-phone{
     color: #FFF;
+}
+
+.carousel-indicators li{
+    width: 10px;
 }

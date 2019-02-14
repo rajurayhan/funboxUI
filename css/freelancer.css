@@ -115,6 +115,7 @@ section h2 {
 }
 
 #mainNav .navbar-nav {
+  text-align: right;
   margin-top: 1rem;
   letter-spacing: 0.0625rem;
 }

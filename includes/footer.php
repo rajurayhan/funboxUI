@@ -7,9 +7,10 @@
           Download 5 free attractive contents everyday by subscribing to Funbox service only @ BDT 2.44 including (VAT+SD+SC) per day. To subscribe please click the subscribe button. Thank You!
           </p>
           <p class="text-center">
-            <i class="fa fa-phone-square" aria-hidden="true"></i>  01977733255
+            <i class="fa fa-phone-square" aria-hidden="true"></i>  <?php echo $adbox->getSupportNumber(); ?> <br>
+            <small>&copy; Adbox Bangladesh <?php echo date('Y'); ?></small>
           </p>
-          <small>&copy; Adbox Bangladesh <?php echo date('Y'); ?></small>
+          
         </div>
       </div>
     </div>
@@ -46,13 +47,5 @@
 </body>
 
 <script>
-   $(document).ready(function () {
-      $(document).click(function (event) {
-          var clickover = $(event.target);
-          var _opened = $(".navbar-collapse").hasClass("show");
-          if (_opened === true && !clickover.hasClass("navbar-toggler")) {
-              $(".navbar-toggler").click();
-          }
-      });
-  });
+
 </script>

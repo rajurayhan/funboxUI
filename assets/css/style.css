@@ -1,0 +1,383 @@
+/* adbox: #f33902, blink: #f33902, gp: #01c7f6, robi: #ff0000 */
+
+@media only screen and ( min-width : 320px ) and  ( max-width: 479px ) {}
+@media only screen and ( min-width : 480px ) and  ( max-width: 767px ) {}
+@media only screen and ( min-width : 768px ) {}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url( ../font/Montserrat.ttf ) format( "truetype" );
+}
+
+* {
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+}
+
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba( 0, 0, 0, 0.3 );
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background-color: #000000;
+}
+
+.funbox-body {
+    background-color: #f5f5f5;
+}
+
+.funbox-container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.funbox-row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.funbox-col {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.funbox-logo {
+    display: block;
+    margin: 0 auto;
+}
+
+.funbox-hr {
+    width: 100%;
+    height: 10px;
+    background: url( ../img/funbox-border-1x.png ) no-repeat;
+    background-size: 100% 100%;
+}
+
+.blink .funbox-hr {
+	background-image: url( ../img/funbox-border-1x-blink.png );
+}
+
+.gp .funbox-hr {
+	background-image: url( ../img/funbox-border-1x-gp.png );
+}
+
+.robi .funbox-hr {
+	background-image: url( ../img/funbox-border-1x-robi.png );
+}
+
+#funbox-carousel .carousel-control.left,
+#funbox-carousel .carousel-control.right {
+    background-image: none;
+}
+
+.funbox-nav {
+    width: 100%;
+    height: 30px;
+    background: url( ../img/funbox-nav-3x.png ) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    padding-top: 6px;
+}
+
+.blink .funbox-nav {
+	background-image: url( ../img/funbox-nav-3x-blink.png );
+}
+
+.gp .funbox-nav {
+	background-image: url( ../img/funbox-nav-3x-gp.png );
+}
+
+.robi .funbox-nav {
+	background-image: url( ../img/funbox-nav-3x-robi.png );
+}
+
+.funbox-nav > li {
+    display: inline-block;
+}
+
+.funbox-nav > li.funbox-nav-border {
+    border: 1px solid #fff;
+    height: 15px;
+    margin-bottom: -3px;
+}
+
+.funbox-nav > li > a {
+    padding: 0 3px;
+    color: #ffffff;
+}
+
+@media only screen and ( min-width : 768px ) {
+    .funbox-nav > li > a {
+        padding: 0 5px;
+    }
+}
+
+.funbox-nav > li > a:hover,
+.funbox-nav > li > a:focus {
+    background-color: transparent
+}
+
+.funbox-nav > li.active a {
+    color: #000000;
+    background-color: #f5f5f5;
+}
+
+.funbox-nav.funbox-nav-category {
+    padding-top: 5px;
+}
+
+.funbox-nav.funbox-nav-category > li {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+@media only screen and ( min-width : 480px ) and  ( max-width: 767px ) {
+    .funbox-nav.funbox-nav-category > li {
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+}
+
+@media only screen and ( min-width : 768px ) {
+    .funbox-nav.funbox-nav-category > li {
+        margin-left: 9px;
+        margin-right: 9px;
+    }
+}
+
+.funbox-nav.funbox-nav-category > li > a {
+    border: 1px solid #ffffff;
+    border-bottom: none;
+    border-radius: 3px 3px 0 0;
+    padding: 4px;
+}
+
+@media only screen and ( min-width : 360px ) {
+    .funbox-nav.funbox-nav-category > li > a {
+        padding: 4px 8px;
+    }
+}
+
+@media only screen and ( min-width : 460px ) {
+    .funbox-nav.funbox-nav-category > li > a {
+        width: 82px;
+    }
+}
+
+@media only screen and ( min-width : 603px ) {
+    .funbox-nav.funbox-nav-category > li > a {
+        width: 87px;
+    }
+}
+
+@media only screen and ( min-width : 768px ) {
+    .funbox-nav.funbox-nav-category > li > a {
+        width: 110px;
+    }
+}
+
+.funbox-contents {
+    margin-top: 10px;
+    position: relative;
+}
+
+.funbox-contents .contents-container {
+    min-height: 100px;
+}
+
+/* .funbox-contents .funbox-control {
+    text-align: center;
+    position: absolute;
+    color: #000000;
+} */
+
+/* .funbox-contents .funbox-control.left {
+    left: 0;
+    top: 40%;
+    transform: translate( 40% );
+} */
+
+/* .funbox-contents .funbox-control.right {
+    right: 0;
+    top: 40%;
+    transform: translate( -40% );
+} */
+
+.glyphicon.glyphicon-2x {
+    font-size: 20px;
+}
+
+.glyphicon.glyphicon-3x {
+    font-size: 25px;
+}
+
+.funbox-thumbnail {
+    padding: 5px 0px 0px 0px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 10px;
+    line-height: 1;
+    border-radius: 0;
+    border: none;
+    -webkit-box-shadow: -3px 3px 4px 0px rgba(204,204,204,1);
+    -moz-box-shadow: -3px 3px 4px 0px rgba(204,204,204,1);
+    box-shadow: -3px 3px 4px 0px rgba(204,204,204,1);
+}
+
+.funbox-thumbnail a:hover,
+.funbox-thumbnail a:focus {
+    text-decoration: none;
+}
+
+.funbox-thumbnail img {
+    display: block;
+    margin: auto auto;
+    width: 100%;
+    height: auto !important;
+}
+
+@media only screen and ( min-width : 320px ) and  ( max-width: 479px ) {
+    .funbox-thumbnail img {
+        width: 90px;
+        height: 90px !important;
+    }
+}
+
+@media only screen and ( min-width : 480px ) and  ( max-width: 767px ) {
+    .funbox-thumbnail img {
+        width: 150px;
+        height: 150px !important;
+    }
+}
+
+@media only screen and ( min-width : 768px ) {
+    .funbox-thumbnail img {
+        width: 150px;
+        height: 150px !important;
+    }
+}
+
+.funbox-thumbnail img.funbox-preview {
+    width: 150px;
+    height: 150px !important;
+    margin-bottom: 8px;
+}
+
+.funbox-thumbnail .funbox-caption {
+    padding: 3px;
+}
+
+@media only screen and ( min-width : 768px ) {
+    .funbox-thumbnail .funbox-caption {
+        padding: 5px;
+    }
+}
+
+.funbox-thumbnail .funbox-caption p {
+    margin: 0;
+    font-size: 11px;
+    height: 20px;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 20px;
+}
+
+.funbox-thumbnail .btn-download
+{
+    font-size: 11px;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-radius: 0px;
+    background-color: #f33902;
+}
+
+.blink .funbox-thumbnail .btn-download {
+    background-color: #f33902;
+}
+
+.gp .funbox-thumbnail .btn-download {
+    background-color: #01c7f6;
+}
+
+.robi .funbox-thumbnail .btn-download {
+    background-color: #ff0000;
+}
+
+.funbox-footer p {
+    font-size: 11px;
+    margin-bottom: 0px;
+}
+
+.btn-funbox {
+    font-size: 11px;
+    background: url( ../img/funbox-btn.png ) no-repeat;
+    background-size: 100% 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-radius: 8px;
+}
+
+.btn-funbox:active {
+    background-image: url( ../img/funbox-btn.png );
+}
+
+.btn-funbox:focus,
+.btn-funbox:hover {
+    color: #ffffff;
+}
+
+.blink .btn-funbox {
+    background-image: url( ../img/funbox-btn-blink.png );
+}
+
+.gp .btn-funbox {
+    background-image: url( ../img/funbox-btn-gp.png );
+}
+
+.robi .btn-funbox {
+    background-image: url( ../img/funbox-btn-robi.png );
+}
+
+.btn-subscribe {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.btn-account {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.btn-unsubscribe {
+    color: #f33902;
+    font-size: 11px;
+}
+
+.btn-unsubscribe:focus,
+.btn-unsubscribe:hover {
+    text-decoration: none;
+}
+
+.blink .btn-unsubscribe {
+    color: #f33902;
+}
+
+.gp .btn-unsubscribe {
+    color: #01c7f6;
+}
+
+.robi .btn-unsubscribe {
+    color: #ff0000;
+}

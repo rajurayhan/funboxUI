@@ -1,50 +1,6 @@
 <?php 
   define( 'FORBIDDEN', TRUE );
   require_once( 'includes/init.php' );
-  // mob1k = tiger (Airtel)  funboxbd.com?chanel=mob1k&ta={ta}
-  // mob1h = tiger (Blink) funboxbd.com?chanel=mob1h&ta={ta}
-  // mob1p = tiger (Robi) funboxbd.com?chanel=mob1p&ta={ta}
-
-  // mob1n = bs (Airtel) funboxbd.com?chanel=mob1n&hash={hash}
-  // mob1o = bs (Blink) funboxbd.com?chanel=mob1o&hash={hash}
-  // mob1q = bs (Robi) funboxbd.com?chanel=mob1q&hash={hash}
-  $bitterStrawberry = array(
-    'airtel'  => 'mob1n' , 
-    'robi'    => 'mob1q' , 
-    'blink'   => 'mob1o' , 
-  );
-
-  $tiger = array(
-    'airtel'  => 'mob1k' , 
-    'robi'    => 'mob1p' , 
-    'blink'   => 'mob1h' , 
-  );
-
-  //exit(var_dump($tiger));
-  try{
-      if(!isset($_GET['chanel'])){throw new Exception('Channel not found.');}
-      $chanel=$_GET['chanel'];
-      if(!in_array($chanel,array('mob1n','mob1o', 'mob1k', 'mob1q', 'mob1p', 'mob1h'))){throw new Exception('Channel not matched.');}
-
-      if(in_array($chanel, $bitterStrawberry)&&!isset($_GET['hash'])){throw new Exception('Track ID not found.');} // BitterStrawberry
-      if(in_array($chanel, $tiger)&&!isset($_GET['ta'])){throw new Exception('Track ID not found.');} // Tiger
-
-      $chanel_base='http://funboxbd.com/online/bn/'.$chanel;
-
-      if(in_array($chanel, $bitterStrawberry)){
-          $data=array('hash'=>$_GET['hash']);
-          // exit('Found in BS');
-      }
-      elseif(in_array($chanel, $tiger)){
-          $data=array('ta'=>$_GET['ta']);
-          // exit('Found in Tiger');
-      }
-      $chanel_query = http_build_query($data);
-      $chanel_url=$chanel_base.'?'.$chanel_query;
-      header('refresh: 3; url='.$chanel_url);//exit;
-  }catch(Exception $e) {
-      //header('location: http://funboxbd.com/club');//exit;
-  }
 
   ?>
 

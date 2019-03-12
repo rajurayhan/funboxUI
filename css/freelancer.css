@@ -125,7 +125,9 @@ section h2 {
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #18BC9C;
+  /*color: #18BC9C;*/
+  color: #FFF;
+  background-color: rgba(243, 57, 2, 0.9);
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
@@ -133,7 +135,8 @@ section h2 {
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #18BC9C;
+  /*color: #18BC9C;*/
+  color: rgba(243, 57, 2, 0.9);
 }
 
 #mainNav .navbar-toggler {
@@ -158,11 +161,13 @@ section h2 {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
     color: #fff;
-    background: #18BC9C;
+    /*background: #18BC9C;*/
+    background-color: rgba(243, 57, 2, 0.9);
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
-    background: #18BC9C;
+    /*background: #18BC9C;*/
+    background: rgba(243, 57, 2, 0.9);
   }
   #mainNav.navbar-shrink {
     padding-top: 0.5rem;
@@ -217,7 +222,7 @@ header.masthead h2 {
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
   opacity: 0;
-  background-color: rgba(24, 188, 156, 0.9);
+  background-color: rgba(243, 57, 2, 0.9);
 }
 
 .portfolio .portfolio-item .portfolio-item-caption:hover {

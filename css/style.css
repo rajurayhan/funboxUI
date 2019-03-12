@@ -15,19 +15,25 @@
 #myAccountBtn{
     float: right;
     width: 49.5%;
-    background-color: #cc6600;
-    border-color: #cc6600;
+    /*background-color: #cc6600;
+    border-color: #cc6600;*/
+    background-color: rgba(243, 57, 2, 0.9);
+    border-color: rgba(243, 57, 2, 0.9);
 }
 
 #subscribeBtn{
     float: left;
     width: 49.5%;
-    background-color: #cc6600;
-    border-color: #cc6600;
+    /*background-color: #cc6600;
+    border-color: #cc6600;*/
+    background-color: rgba(243, 57, 2, 0.9);
+    border-color: rgba(243, 57, 2, 0.9);
 }
 
 #subscribeBtn.focus, #subscribeBtn:focus, #myAccountBtn.focus, #myAccountBtn:focus, .bg-funbox:focus{
-    box-shadow: 0 0 0 0.2rem rgba(243,57,2,.5)
+    /*box-shadow: 0 0 0 0.2rem rgba(243,57,2,.5)*/
+    box-shadow: none;
+    outline: none;
 }
 
 .bg-funbox{
@@ -54,7 +60,7 @@
 
 
 .gameCol{
-    background: url('/funboxui/img/games.png');
+    background: url('/club/img/games.jpg');
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
@@ -62,7 +68,7 @@
 }
 
 .musicCol{
-    background: url('/funboxui/img/music-2.png');
+    background: url('/club/img/music.png');
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
@@ -70,7 +76,7 @@
 }
 
 .videoCol{
-    background: url('/funboxui/img/videos.png');
+    background: url('/club/img/videos.jpg');
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
@@ -78,7 +84,7 @@
 }
 
 .wallpaperCol{
-    background: url('/funboxui/img/wallpaper.png');
+    background: url('/club/img/wallpaper.jpg');
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
@@ -86,7 +92,7 @@
 }
 
 .animationCol{
-    background: url('/funboxui/img/animation.png');
+    background: url('/club/img/animation.png');
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
@@ -105,7 +111,7 @@
   }
 
 .gameTxt{
-    background-color: #1b0000bd;
+    background-color: #4e142aa6;
 }
 
 .videoTxt{
@@ -113,11 +119,11 @@
 }
 
 .wallpaperTxt{
-    background-color: #1a273cad;
+    background-color: #6f85a7bd;
 }
 
 .musicTxt{
-    background-color: #c245039e;
+    background-color: #00065fa1;
 }
 
 .animationTxt{
@@ -135,4 +141,24 @@
 
 .carousel-indicators li{
     width: 10px;
+}
+
+.previewImg, .downloadBtn{
+    width: 50%;
+    margin-top: 15px;
+    margin-left: 25%;
+}
+
+.downloadBtn{
+    background-color: #f33902;
+    border-color: #f33902;
+}
+
+.contenImg{
+    max-height: 100px !important;
+}
+
+.activeNav{
+    color: #FFF !important;
+    background-color: rgba(243, 57, 2, 0.9) !important;
 }

@@ -1,3 +1,19 @@
+<?php 
+  define( 'FORBIDDEN', TRUE );
+  require_once( 'includes/init.php' );
+
+  $category_id      = $_GET["category"];
+  $sub_category_id  = '8, 12, 22, 25, 30, 31, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 85, 86, 87';
+
+  $contents = $adbox->getContents( array(
+      'category_id'       => $category_id,
+      'limit'             => 10,
+      'sub_category_id'   => $sub_category_id
+  ) );
+
+  //var_dump($contents);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +24,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Games - Funbox</title>
+  <title><?php echo $_GET["name"]  ?> - Funbox</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -48,69 +64,26 @@
   <!-- Portfolio Grid Section -->
   <section class="portfolio" id="portfolio">
     <div class="container">
-      <h2 class="text-center text-uppercase text-secondary mb-0"><?php echo $_GET["name"]  ?></h2>
-      <hr class="star-dark mb-5">
+      <h5 class="text-center text-uppercase text-secondary mb-0"><?php echo $_GET["name"]  ?></h5>
+      <hr class="">
       <div class="row">
-        <div class="gameBlock">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/cabin.png" alt="">
-          </a>
-        </div>
-        <div class="gameBlock">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/cake.png" alt="">
-          </a>
-        </div>
-        <div class="gameBlock">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/circus.png" alt="">
-          </a>
-        </div>
-        <div class="gameBlock">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/game.png" alt="">
-          </a>
-        </div>
-        <div class="gameBlock">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/safe.png" alt="">
-          </a>
-        </div>
-        <div class="gameBlock">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/submarine.png" alt="">
-          </a>
-        </div>
+        <?php if( $contents ): ?>
+            <?php foreach( $contents as $c ): ?>
+                <div class="gameBlock">
+                  <a class="portfolio-item d-block mx-auto" href="<?php echo $c->preview_url; ?>">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                      <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                        <i class="fas fa-search-plus fa-3x"></i>
+                      </div>
+                    </div>
+                    <img class="img img-responsive contenImg" style="width: 100%" src="<?php echo $c->thumb_url; ?>" alt="<?php echo $adbox->siteTitle; ?>">
+                    <p class="text-center" style="color: #FFF; margin-top: 5px; text-transform: uppercase; background-color: rgba(243, 57, 2, 0.9); border-radius: 5px;"><?php echo $c->title; ?></p>
+                  </a>
+                </div>
+            <?php endforeach; ?>
+        <?php else: ?>
+            <h4 class="text-center">No content found.</h4>
+        <?php endif; ?>
       </div>
     </div>
   </section>
@@ -119,7 +92,13 @@
   <div class="container" id="buttons">
     <div class="row">
       <div class="col-lg-12">
-          <button class="btn btn-success" id="subscribeBtn">Subscribe</button> 
+          <?php if( $adbox->isNotSubscribed() ): ?>
+              <a href="/club/subscribe.php"><button class="btn btn-success" id="subscribeBtn">Subscribe</button></a>
+          <?php endif; ?>
+
+          <?php if( $adbox->isSubscribed() ): ?>
+              <a href="/club/unsubscribe.php"><button class="btn btn-success" id="subscribeBtn">Unsubscribe</button></a>
+          <?php endif; ?>
           <button class="btn btn-success" id="myAccountBtn">My Account</button>
       </div>
     </div>

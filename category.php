@@ -70,13 +70,15 @@
         <?php if( $contents ): ?>
             <?php foreach( $contents as $c ): ?>
                 <div class="gameBlock">
-                  <a class="portfolio-item d-block mx-auto" href="<?php echo $c->preview_url; ?>">
-                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                  <a class="" href="<?php echo $c->preview_url; ?>">
+                    <!-- <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                       <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                         <i class="fas fa-search-plus fa-3x"></i>
                       </div>
-                    </div>
+                    </div> -->
                     <img class="img img-responsive contenImg" style="width: 100%" src="<?php echo $c->thumb_url; ?>" alt="<?php echo $adbox->siteTitle; ?>">
+                  </a>
+                  <a class="" href="<?php echo $c->preview_url; ?>">
                     <p class="text-center" style="color: #FFF; margin-top: 5px; text-transform: uppercase; background-color: rgba(243, 57, 2, 0.9); border-radius: 5px;"><?php echo $c->title; ?></p>
                   </a>
                 </div>
